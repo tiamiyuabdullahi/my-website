@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO'S PRIDE | Luxury Redefined</title>
+
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark-grey: #1a1a1a;
+            --black: #0d0d0d;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--black);
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: var(--gold);
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: var(--gold);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #fff;
+        }
+
+        .section {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .cars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--dark-grey);
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .contact-section {
+            background: #111;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">AUTO'S PRIDE</div>
+        <div class="nav-links">
+            <a href="#inventory">Inventory</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Drive Power. Own Prestige.</h1>
+        <a href="#inventory" class="btn">View Collection</a>
+    </div>
+
+    <!-- INVENTORY -->
+    <div class="section" id="inventory">
+        <h2>Our Collection</h2>
+
+        <div class="cars">
+
+            <!-- Rolls Royce -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+                <div class="card-info">
+                    <h3>Rolls-Royce Phantom 2024</h3>
+                    <p style="color:#ccc">₦350,000,000</p>
+                    <p style="color:var(--gold)">In Stock</p>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Rolls-Royce%20Phantom%202024"
+                        class="btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Lamborghini -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e">
+                <div class="card-info">
+                    <h3>Lamborghini Aventador</h3>
+                    <p style="color:#ccc">₦280,000,000</p>
+                    <p style="color:var(--gold)">In Stock</p>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Lamborghini%20Aventador" class="btn"
+                        target="_blank">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Mercedes -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+                <div class="card-info">
+                    <h3>Mercedes-Benz S-Class 2023</h3>
+                    <p style="color:#ccc">₦180,000,000</p>
+                    <p style="color:var(--gold)">In Stock</p>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Mercedes-Benz%20S-Class%202023"
+                        class="btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- BMW -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d">
+                <div class="card-info">
+                    <h3>BMW X7 2023</h3>
+                    <p style="color:#ccc">₦150,000,000</p>
+                    <p style="color:var(--gold)">In Stock</p>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20BMW%20X7%202023" class="btn"
+                        target="_blank">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Range Rover -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6">
+                <div class="card-info">
+                    <h3>Range Rover Sport 2024</h3>
+                    <p style="color:#ccc">₦220,000,000</p>
+                    <p style="color:var(--gold)">In Stock</p>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Range%20Rover%20Sport%202024"
+                        class="btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888">
+                <div class="card-info">
+                    <h3>Ferrari SF90 Stradale</h3>
+                    <p style="color:#ccc">₦320,000,000</p>
+                    <p style="color:var(--gold)">In Stock</p>
+                    <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Ferrari%20SF90%20Stradale"
+                        class="btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+    <div class="card-info">
+        <h3>Porsche 911 Carrera</h3>
+        <p style="color:#ccc">₦200,000,000</p>
+        <p style="color:var(--gold)">In Stock</p>
+        <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Porsche%20911%20Carrera"
+           class="btn" target="_blank">Buy Now</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05a1">
+    <div class="card-info">
+        <h3>Lexus LX600 2024</h3>
+        <p style="color:#ccc">₦170,000,000</p>
+        <p style="color:var(--gold)">In Stock</p>
+        <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Lexus%20LX600%202024"
+           class="btn" target="_blank">Buy Now</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a">
+    <div class="card-info">
+        <h3>Audi RS7 Sportback</h3>
+        <p style="color:#ccc">₦160,000,000</p>
+        <p style="color:var(--gold)">In Stock</p>
+        <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Audi%20RS7"
+           class="btn" target="_blank">Buy Now</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1597007066704-67bf2068d5b2">
+    <div class="card-info">
+        <h3>Toyota Land Cruiser 300</h3>
+        <p style="color:#ccc">₦140,000,000</p>
+        <p style="color:var(--gold)">In Stock</p>
+        <a href="https://wa.me/2348012345678?text=I%20want%20to%20buy%20Land%20Cruiser%20300"
+           class="btn" target="_blank">Buy Now</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89">
+    <div class="card-info">
+        <h3>Tesla Model X</h3>
+        <p style="color:#ccc">₦190,000,000</p>
+        <p style="color:var(--gold)">In Stock</p>
+        <a href="https://wa.me/2347076445218?text=I%20want%20to%20buy%20Tesla%20Model%20X"
+           class="btn" target="_blank">Buy Now</a>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact-section" id="contact">
+        <h2>Get In Touch</h2>
+        <p>Visit our showroom or contact us</p>
+        <p>📞 +234 XXX XXX XXXX</p>
+        <p>📧 info@autospride.com</p>
+        <p>📍 Lagos, Nigeria</p>
+    </div>
+
+    <footer>
+        © 2026 AUTO'S PRIDE. Built for Oba.
+    </footer>
+
+</body>
+
+</html>
